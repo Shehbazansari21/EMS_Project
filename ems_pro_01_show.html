@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Employee Details</title>
+</head>
+<body>
+<center>
+<h1> Employee Details </h1>
+<br/>
+ <table border="3">
+        <thead>
+           
+          <tr>
+            <th>Employee_ID</th>
+            <th>Name</th>
+            <th>Mobile_No</th>
+            <th>Email_id</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in result %}
+          <tr>
+            <td>{{ row[0] }}</th>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[7] }}</td>
+          </tr>
+          {% endfor%}
+        </tbody>
+      </table>
+      </body>
+      </html>
